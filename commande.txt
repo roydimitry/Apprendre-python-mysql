@@ -1,0 +1,5 @@
+xgettext -d messages -o locales/messages.pot *.py
+msginit -l fr -i locale/messages.pot -o locale/fr/LC_MESSAGES/messages.po
+msginit -l en -i locale/messages.pot -o locale/en/LC_MESSAGES/messages.po
+msgfmt locale/fr/LC_MESSAGES/messages.po -o locale/fr/LC_MESSAGES/messages.mo
+msgfmt locale/en/LC_MESSAGES/messages.po -o locale/en/LC_MESSAGES/messages.mo
